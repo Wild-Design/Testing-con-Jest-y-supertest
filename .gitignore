@@ -1,0 +1,12 @@
+# Dependencias instaladas
+/node_modules
+
+# Archivos generados en la construcción
+/build
+/dist
+
+# Archivos de registro
+*.log
+
+# Archivos de configuración local
+.env
