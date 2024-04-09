@@ -20,4 +20,8 @@ server.post('/tasks', (req, res) => {
   res.status(200).json({ title, description, id: v4() });
 });
 
+server.get('/coso', (req, res) => {
+  res.status(200).send('XD');
+});
+
 module.exports = server;

@@ -50,3 +50,14 @@ describe('Cuando haga un POST a /tasks', () => {
     });
   });
 });
+
+describe('Cuando haga un GET a /coso', () => {
+  test('Debe responder con un codigo de estado 200', async () => {
+    const response = await request(app).get('/coso');
+    expect(response.statusCode).toBe(200);
+  });
+  test('Debe responder con el mensaje: XD', async () => {
+    const response = await request(app).get('/coso');
+    expect(response.text).toBe('XD');
+  });
+});
